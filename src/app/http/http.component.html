@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First name</th>
+        <th scope="col">Last name </th>
+        <th scope="col">E- mail</th>
+        <th scope="col">Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let item of arrayData">
+        <th scope="row"> {{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.createdAt}}</td>
+        <td><img [src] = "item.avatar"></td>
+      </tr>
+      </tbody>
+</table>
+</div>

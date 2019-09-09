@@ -1,0 +1,10 @@
+<div class="card h-100">
+  <img class="card-img-top" [src]="cardDetails.imgUrl" alt="">
+  <div class="card-body">
+    <h4 class="card-title">{{cardDetails.title}}</h4>
+    <p class="card-text">{{cardDetails.description}}</p>
+  </div>
+  <div class="card-footer">
+    <a routerLink="blog/{{cardDetails.id}}" class="btn btn-primary">Click Here!</a>
+  </div>
+</div>
